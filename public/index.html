@@ -1,11 +1,12 @@
 <html>
-    <head>
-         <!-- Primary Meta Tags -->
+
+<head>
+    <!-- Primary Meta Tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href=""/>
+    <link rel="icon" type="image/png" href="" />
 
     <title>sirloso react-tsx-template</title>
     <meta name="title" content="sirloso react-tsx-template">
@@ -29,9 +30,76 @@
         content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
     <meta property="twitter:image"
         content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-    </head>
-    <body>
-        <div id='root'></div>
-        <script src="../src/index.js"></script>
-    </body>
+    <style>
+        #center {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            width: 25%;
+            height: 75%;
+        }
+
+        #movie {
+            width: 100%;
+            height: 100%;
+        }
+
+        #c {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        #bottom_text{
+            /* align-self: flex-end; */
+            width: 100%;
+        }
+        #text{
+            font-size: 1.25em;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+        @font-face { font-family: Gruppo; src: url('./Gruppo-Regular.ttf'); } 
+        body{
+            font-family: Gruppo;
+        }
+    </style>
+    <!-- 
+        https://www.youtube.com/watch?v=bBUc1B-uS8I
+
+        https://open.spotify.com/album/08lrf3tUeFLyGmMpeJopxv?si=BNvxo0b-T9mT1tX6ZIMYoA
+     -->
+</head>
+
+<body>
+    <div id="c" >
+        <div id="center">
+            <video id="movie" src="./again.mp4" autoplay muted> </video>
+            <div id="text">
+                <div id="toptext">
+                    <div id="spotify">
+                        <a href="https://open.spotify.com/album/08lrf3tUeFLyGmMpeJopxv?si=YULZIbJ_SROzaWHZYwL4-Q">album</a>
+                    </div>
+                    <div id="vis">
+                        <a href="https://www.youtube.com/watch?v=bBUc1B-uS8I">visualizer</a>
+                    </div>
+                </div>
+                <div id="bottom_text">
+                    runner, by los
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
